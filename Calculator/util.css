@@ -1,8 +1,11 @@
 .text-center{
-    text-align: center;
+    text-align:center;
   }
   .mx-auto{
     margin: auto;
+  }
+  .m-w-20{
+    max-width:25vw;
   }
   .flex{
     display:flex;

@@ -2,9 +2,12 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(1, 27, 69); 
 }
-
+h1{
+    color:aliceblue
+}
 .button{
   width: 66px;
   padding: 20px;

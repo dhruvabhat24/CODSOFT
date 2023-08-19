@@ -7,9 +7,6 @@ html, body {
 h1{
     color:aliceblue
 }
-body{
-    background: rgb(66, 101, 206);
-}
 .button{
   width: 66px;
   padding: 20px;

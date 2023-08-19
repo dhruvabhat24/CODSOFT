@@ -16,3 +16,6 @@
   .items-center{
     align-items: center;
   }
+  body{
+    background-color: rgb(17, 226, 180);
+}

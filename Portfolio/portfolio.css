@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
   --header-height: 3.5rem;
-  --hue: 162;
-  --first-color: hsl(var(--hue), 100%, 40%);
+  --hue: 199;
+  --first-color: hsl(var(--hue), 99%, 56%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
@@ -94,7 +94,7 @@ svg {
   max-width: 100%;
   height: auto;
 }
-.nav container {
+.nav{
   max-width: 1120px;
   margin-inline: 1.5rem;
   display: flex;
@@ -136,45 +136,47 @@ svg {
 
 /*=============== HEADER & NAV ===============*/
 .header{
-    position: fixed;
-    width:100%;
-    background-color:var(--container-color);
-    top:0;
-    left:0;
-    z-index:var(--z-fixed);
+  position:fixed;
+  width:100%;
+  background-color: var(--container-color);
+  top:0;
+  left:0;
+  z-index: var(--z-fixed);
+  font-size: large;
 }
-.nav li{
-    height:var(--header-height);
-    display:flex;
-    flex-direction:row-reverse;
-    justify-content:space-between;
-    align-items: center;
+.nav{
+  height:var(--header-height);
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  text-indent: 10vh;
 }
 .nav__logo{
-    color:var(--title-color);
-    font-weight: var(--font-medium);
+
+  color:var(--title-color);
+  font-weight: var(--font-medium);
 }
 .nav__logo span{
-    color:var(--first-color);
+  color:var(--first-color);
 }
-.nav_-toggle,
+.nav__toggle,
 .nav__close{
-    display:flex;
-    font-size:1.25 rem;
-    color:var(--title-color);
-    cursor:pointer;
-
+  display:grid;
+  font-size: 1.25rem;
+  color:var(--title-color);
+  cursor: pointer;
 }
+
 /* Navigation for mobile devices */
 @media screen and (max-width:1023px){
     .nav__menu{
         position:fixed;
-        top:0;
+        top:50;
         right:-100%;
         background-color:hsla(0,0%,10%,.3);
         width:75%;
         height:100%;
-        padding:4.5rem 0 0 3rem;
+        padding: 4.5rem 0 0 3rem;
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         transition: right;
@@ -205,7 +207,21 @@ svg {
 }
 
 /* Add blur to header */
-
+.blur-header{
+  background-color:transparent;
+}
+.blur-header::after{
+  content:'';
+  position:absolute;
+  width:1000%;
+  height:100%;
+  background-color: hsla(0, 0%, 10%,.3);
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  top:0;
+  left:0;
+  z-index:-1;
+}
 
 /* Active link */
 
@@ -220,7 +236,7 @@ svg {
 }
 .home__content{
   display:grid;
- row-gap:2rem;
+  row-gap:2rem;
 }
 .home__data{
   text-align:center;
@@ -247,24 +263,93 @@ font-size: var(--bigger-font-size);
 }
 .home__social-link{
   display:flex;
-  background-color:white;
+  background-color:var(--first-color-alt);
   padding:.5rem;
   color:var(--first-color);
   font-size: 1.5rem;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   transition: transform .4s;
 }
-
+.home__social-link:hover{
+  transform:translate(-.25rem);
+}
+.home__image{
+  justify-self: center;
+}
+.home__blob{
+  width:320px;
+  fill:var(--first-color);
+  filter:drop-shadow(0 12px 12px hsla(var(--hue),100%, 40%, .2))
+}
 
 /*=============== BUTTON ===============*/
-
-
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 1.75rem;
+  border-radius:.5rem;
+  color:var(--title-color);
+  font-weight:var(--font-medium);
+  transition:box-shadow .4s;
+}
+.button:hover{
+  box-shadow: 0 8px 24px hsla(var(--hue),100% 40%, .25);
+}
 /*=============== ABOUT ===============*/
-
-
+.about__container{
+  row-gap:2.5rem;
+}
+.about__data{
+  text-align: center;
+}
+.about__descripption{
+  margin-bottom:2rem;
+}
+.about__img{
+  justify-self: center;
+}
+.about__blob{
+  width:320px;
+  justify-self:center;
+}
+.about__blob path{
+  stroke:var(--first-color);
+}
 /*=============== SKILLS ===============*/
-
-
+.skills{
+background-color: var(--container-color);
+}
+.skills__container{
+  padding-bottom: 2rem;
+  row-gap:3.5rem;
+}
+.skils__data{
+  text-align:center;
+}
+.skills__description{
+  margin-bottom:2rem;
+  text-align:center; 
+}
+.skills__content,
+.skills__group{
+  display:grid;
+}
+.skills__content{
+  grid-template-columns:repeat(2, max-content);
+  column-gap:4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+.skills__group{
+  row-gap:1rem;
+}
+.skills__item{
+  font-weight: var(--font-medium);
+  color:var(--title-color);
+}
+.skills__item::marker{
+  color:var(--first-color);
+}
 /*=============== SERVICES ===============*/
 
 

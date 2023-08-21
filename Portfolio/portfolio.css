@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
   --header-height: 3.5rem;
-  --hue: 199;
-  --first-color: hsl(var(--hue), 99%, 56%);
+  --hue: 162;
+  --first-color: hsl(var(--hue), 100%, 40%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
@@ -94,10 +94,9 @@ svg {
   max-width: 100%;
   height: auto;
 }
-.nav{
+.container{
   max-width: 1120px;
   margin-inline: 1.5rem;
-  display: flex;
 }
 
 .grid {
@@ -328,7 +327,8 @@ background-color: var(--container-color);
 }
 .skills__description{
   margin-bottom:2rem;
-  text-align:center; 
+  text-align:center;
+  align-items: center; 
 }
 .skills__content,
 .skills__group{
@@ -338,7 +338,6 @@ background-color: var(--container-color);
   grid-template-columns:repeat(2, max-content);
   column-gap:4rem;
   justify-content: center;
-  align-items: baseline;
 }
 .skills__group{
   row-gap:1rem;
@@ -350,6 +349,7 @@ background-color: var(--container-color);
 .skills__item::marker{
   color:var(--first-color);
 }
+
 /*=============== PROJECTS ===============*/
 
 

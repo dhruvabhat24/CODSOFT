@@ -411,12 +411,36 @@ align-items: center;
 .projects__card:hover .projects__modal{
   bottom:0;
 }
-
-
-
 /*=============== CONTACT ===============*/
-
-
+.contact__conatiner{
+  padding-top:1rem;
+}
+.contact__form,
+.contact__group{
+  display:grid;
+  row-gap: 1rem;
+}
+.contact__form{
+  position:relative;
+}
+.contact_-input{
+  padding:1rem 1.25rem;
+  border-radius:.5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+.conatct__input::placeholder{
+  color:var(--text-color);
+}
+.contact__form textarea{
+  height:11rem;
+  resize:none;
+  margin-bottom: 2rem;;
+}
+.contact__button{
+  justify-self: center;
+  cursor: pointer;
+}
 /*=============== FOOTER ===============*/
 
 

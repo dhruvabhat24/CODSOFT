@@ -33,19 +33,28 @@ const blurHeader=()=>{
 window.addEventListener('scroll',blurHeader)
 
 /*=============== EMAIL JS ===============*/
-const conatctForm = document.getElementById('conatct-form')
-      conatctMessage = document.getElementById('contact-message')
+const contactForm = document.getElementById('contact-form')
+      contactMessage = document.getElementById('contact-message')
 const sendEmail =(e) =>{
     e.preventDefault()
 
     //ServiceID - templateID - #form -publickey
-    emailjs.sendForm('service_k786uqv', 'template_o1z6vra', '#contact-form', '-rNtAdDbyTixa3hwu')
+    emailjs.sendForm('service_k786uqv', 'template_jk4xdni', '#contact-form', 'SWKk70UAd1BFskAgX')
     .then(()=>{
         // show sent message
-        conatctMessage.textContent = 'Message sent successfully ✔✔'
+        contactMessage.textContent = 'Message sent successfully ✔✔'
+
+        // Remove message after five seconds
+        setTimeout(() =>{
+        contactMessage.textContent = ''
+    }, 5000)
+    // Clear input fields
+    contactForm.reset()
+
+
     }, () =>{
         //Show error message
-        conatctMessage.textContent = 'Message not sent (service error) ❌'
+        contactMessage.textContent = 'Message not sent (service error) ❌'
     })
 }
 conatctForm.addEventListener('submit',sendEmail)      

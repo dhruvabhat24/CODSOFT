@@ -423,7 +423,7 @@ align-items: center;
 .contact__form{
   position:relative;
 }
-.contact_-input{
+.contact__input{
   padding:1rem 1.25rem;
   border-radius:.5rem;
   background-color: var(--container-color);
@@ -440,6 +440,13 @@ align-items: center;
 .contact__button{
   justify-self: center;
   cursor: pointer;
+}
+.contact__message{
+  position: absolute;
+  left:0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
 }
 /*=============== FOOTER ===============*/
 

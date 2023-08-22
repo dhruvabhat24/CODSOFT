@@ -1,5 +1,6 @@
 # CODSOFT
 # Task 1
+This is a portfolio which consists all information about me with different sections like Home, About, Skills, Education, Projects, Contact 
 ## Features
 + Overview of my skills and areas of expertise.
 + Showcase of selected projects with descriptions and links.

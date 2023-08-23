@@ -36,12 +36,12 @@ window.addEventListener('scroll',blurHeader)
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form')
       contactMessage = document.getElementById('contact-message')
-const sendEmail =(e) =>{
+const sendEmail = (e) =>{
     e.preventDefault()
 
     //ServiceID - templateID - #form -publickey
     emailjs.sendForm('service_k786uqv', 'template_jk4xdni', '#contact-form', 'SWKk70UAd1BFskAgX')
-    .then(()=>{
+    .then(() =>{
         // show sent message
         contactMessage.textContent = 'Message sent successfully ✔✔'
 

@@ -17,12 +17,13 @@ if(navClose){
     })
 }
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink=document.querySelectorAll('.nav__link')
-const navLinkAction=()=>{
-    const navMenu=document.getElementById('nav--menu')
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu=document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
-navLink.forEach(n=>n.addEventListener('click',LinkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== ADD BLUR TO HEADER ===============*/
 const blurHeader=()=>{
@@ -57,7 +58,7 @@ const sendEmail =(e) =>{
         contactMessage.textContent = 'Message not sent (service error) ❌'
     })
 }
-conatctForm.addEventListener('submit',sendEmail)      
+contactForm.addEventListener('submit',sendEmail)      
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{

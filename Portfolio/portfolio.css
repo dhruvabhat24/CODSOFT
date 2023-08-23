@@ -94,6 +94,7 @@ svg {
   max-width: 100%;
   height: auto;
 }
+/*=========Reusable CSS Classes ========*/
 .container{
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -141,7 +142,6 @@ svg {
   top:0;
   left:0;
   z-index: var(--z-fixed);
-  font-size: large;
 }
 .nav{
   height:var(--header-height);
@@ -151,7 +151,6 @@ svg {
   text-indent: 10vh;
 }
 .nav__logo{
-
   color:var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -160,7 +159,7 @@ svg {
 }
 .nav__toggle,
 .nav__close{
-  display:grid;
+  display:flex;
   font-size: 1.25rem;
   color:var(--title-color);
   cursor: pointer;
@@ -170,8 +169,8 @@ svg {
 @media screen and (max-width:1023px){
     .nav__menu{
         position:fixed;
-        top:50;
-        right:-100%;
+        top:0;/*0*/
+        right: -100%;
         background-color:hsla(0,0%,10%,.3);
         width:75%;
         height:100%;
@@ -183,7 +182,7 @@ svg {
 }
 .nav__list{
   display:flex;
-  flex-direction: space-between;
+  flex-direction: column;
   row-gap: 3rem;
 }
 .nav__link{
@@ -207,7 +206,7 @@ svg {
 
 /* Add blur to header */
 .blur-header{
-  background-color:transparent;
+  background-color: transparent;
 }
 .blur-header::after{
   content:'';
@@ -233,11 +232,11 @@ svg {
 }
 .home__conatiner{
   padding-top: 2rem;
-  row-gap:2.5rem;
+  row-gap: 2.5rem;
 }
 .home__content{
-  display:grid;
-  row-gap:2rem;
+  display: grid;
+  row-gap: 2rem;
 }
 .home__data{
   text-align:center;
@@ -255,7 +254,7 @@ font-size: var(--bigger-font-size);
   font-weight: var(--font-semi-bold);
 }
 .home__description{
-  margin-block:1rem 1.5rem ;
+  margin-block: 1rem 1.5rem ;
 }
 .home__social{
   display:flex;
@@ -275,9 +274,8 @@ font-size: var(--bigger-font-size);
   transform:translate(-.25rem);
 }
 .home__image{
-  justify-self:right;
-  width:200px;
-  height:340px;
+  justify-self: center;
+  width: 900px;
 }
 
 /*=============== BUTTON ===============*/
@@ -285,10 +283,10 @@ font-size: var(--bigger-font-size);
   display: inline-block;
   background-color: var(--first-color);
   padding: 1rem 1.75rem;
-  border-radius:.5rem;
+  border-radius: .5rem;
   color:var(--title-color);
   font-weight:var(--font-medium);
-  transition:box-shadow .4s;
+  transition: box-shadow .4s;
 }
 .button:hover{
   box-shadow: 0 8px 24px hsla(var(--hue),100% 40%, .25);
@@ -312,27 +310,29 @@ background-color: var(--container-color);
 }
 .skills__container{
   padding-bottom: 2rem;
-  row-gap:3.5rem;
+  row-gap: 3.5rem;
 }
 .skils__data{
-  text-align:center;
+  text-align: center;
 }
 .skills__description{
-  margin-bottom:2rem;
-  text-align:center;
+  margin-bottom: 2rem;
+  text-align: justify;
   align-items: center; 
 }
 .skills__content,
 .skills__group{
-  display:grid;
+  display: grid;
 }
 .skills__content{
   grid-template-columns:repeat(2, max-content);
-  column-gap:4rem;
+  column-gap: 4rem;
   justify-content: center;
+  align-items: baseline;
 }
 .skills__group{
-  row-gap:1rem;
+  row-gap: 1rem;
+  list-style-type: decimal-leading-zero;
 }
 .skills__item{
   font-weight: var(--font-medium);
@@ -341,7 +341,6 @@ background-color: var(--container-color);
 .skills__item::marker{
   color:var(--first-color);
 }
-
 /*=============== PROJECTS ===============*/
 .projects{
   background-color: var(--container-color);

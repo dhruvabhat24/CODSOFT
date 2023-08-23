@@ -273,12 +273,9 @@ font-size: var(--bigger-font-size);
   transform:translate(-.25rem);
 }
 .home__image{
-  justify-self: center;
-}
-.home__blob{
-  width:320px;
-  fill:var(--first-color);
-  filter:drop-shadow(0 12px 12px hsla(var(--hue),100%, 40%, .2))
+  justify-self:right;
+  width:200px;
+  height:340px;
 }
 
 /*=============== BUTTON ===============*/
@@ -307,14 +304,7 @@ font-size: var(--bigger-font-size);
 .about__img{
   justify-self: center;
 }
-.about__blob{
-  width:320px;
-  justify-self:center;
-}
-.about__blob path{
-  stroke:var(--first-color);
-}
-/*=============== SKILLS ===============*/
+/*============= SKILLS ===============*/
 .skills{
 background-color: var(--container-color);
 }

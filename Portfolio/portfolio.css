@@ -346,18 +346,18 @@ background-color: var(--container-color);
   background-color: var(--container-color);
 }
 .projects__container{
-  row-gap:2rem;
+  row-gap: 2rem;
   justify-content: center;
   padding-block: 1rem;
 }
 .projects__card{
-  position:relative;
+  position: relative;
   border-radius: 1rem;
   overflow: hidden;
 }
 .projects__img{
-  width:300px;
-  height:300px;
+  width: 100%;
+  height: 100%;
 }
 .projects__modal{
   position:absolute;
@@ -366,11 +366,12 @@ background-color: var(--container-color);
   width:100%;
   height:100%;
   background: linear-gradient(180deg,
-   hsla(0,0% 0%,0)0%, 
-   hsla(var(--hue),70%,40%,.8)120%);
+              hsla(0, 0%, 0%, 0) 0%, 
+              hsla(var(--hue), 70%, 40%, .8) 120%);
    backdrop-filter: blur(4px);
    -webkit-backdrop-filter: blur(4px);
-   border-radius: flex;
+   border-radius: 1rem;
+   display:flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;

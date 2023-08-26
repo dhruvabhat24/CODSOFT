@@ -585,7 +585,7 @@ bottom: 3rem;
   }
   .nav__list{
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
   .nav__menu{
     width: initial;
@@ -601,7 +601,7 @@ bottom: 3rem;
   }
   .home__container{
     grid-template-columns: 455px 550px;
-    column-gap: 7rem;
+    column-gap: 5rem;
     padding-block: 2rem 3rem;
   }
   .home__content{

@@ -301,8 +301,10 @@ font-size: var(--bigger-font-size);
 .about__descripption{
   margin-bottom:2rem;
 }
-.about__img{
-  justify-self: center;
+.about__image{
+  justify-self:left ;
+  width: 400px;
+  height: 500px;
 }
 /*============= SKILLS ===============*/
 .skills{
@@ -585,7 +587,7 @@ bottom: 3rem;
   }
   .nav__list{
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 3rem;
   }
   .nav__menu{
     width: initial;
@@ -601,7 +603,7 @@ bottom: 3rem;
   }
   .home__container{
     grid-template-columns: 455px 550px;
-    column-gap: 5rem;
+    column-gap: 7rem;
     padding-block: 2rem 3rem;
   }
   .home__content{

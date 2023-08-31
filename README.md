@@ -83,3 +83,32 @@ This is a simple Java program that calculates the total marks, average percentag
 - Input the number of subjects and their marks.
 - Calculates total marks and average percentage.
 - Assigns a grade based on the average percentage achieved.
+
+# Task 3
+## Student Management System
+This is a simple Student Management System implemented in Java. It allows users to manage a collection of students, including adding, removing, searching, and displaying student information.
+## Features
+
+- Add a new student with their name, roll number, and grade.
+- Remove a student by their roll number.
+- Search for a student using their roll number.
+- Display a list of all students.
+- Simple console-based user interface.
+
+## Getting Started
+
+### Prerequisites
+
+- Java Development Kit (JDK) installed on your machine.
+
+### Installation
+
+- Clone the repository:
+
+git clone https://github.com/Dhruvabhat24/student-management-system.git
+
+- Compile java files
+cd student-management-system
+javac Main.java
+
+- Run the compiled file

@@ -65,7 +65,7 @@ You can customize the game by modifying the variables at the beginning of the `N
 - `maxAttempts` sets the maximum number of attempts allowed per round.
 
 # Task 2
-## Java Grade Calculator
+## Grade Calculator
 
 This is a simple Java program that calculates the total marks, average percentage, and assigns a grade based on the average percentage achieved in a set of subjects.
 

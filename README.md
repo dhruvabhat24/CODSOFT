@@ -26,17 +26,6 @@ This is a simple calculator web application that allows users to perform basic a
 * Toggle the sign of the current value with the "+/-" button.
 * Calculate the result of the expression using the "=" button.
 
-# Task 3
-## Todo Page 
-
-This is a simple Todo web application that allows users to make a list of todo and to edit it and to delete it.
-
-## Features
-+ Add tasks with descriptions to your list.
-+ Mark tasks as completed.
-+ Remove tasks from the list.
-+ Responsive design for various screen sizes.
-+ Minimalistic and user-friendly interface.
 
 # CODSOFT JAVA-PROGRAMMING
 
